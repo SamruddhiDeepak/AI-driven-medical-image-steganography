@@ -1,0 +1,144 @@
+/* Background Styling */
+body {
+    background-image: 
+      linear-gradient(45deg, rgba(41, 128, 185, 0.7), rgba(44, 62, 80, 0.7)), 
+      url(https://wallpaperaccess.com/full/2939803.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 1, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Decoding Page Container */
+  .decoding-page {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    text-align: left; /* Align text to the left */
+  }
+  
+  
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label Styling */
+  label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  /* Input Styling */
+  input[type="password"], input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input[type="password"]:focus, input[type="file"]:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 20px;
+    background-color: #2980b9; /* Blue for button */
+    color: #fff;
+    border: 1px solid #2980b9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 250px; /* Limit max-width */
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: hsl(204, 19%, 90%);
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+  
+  button:disabled {
+    background-color: #BDC3C7;
+    cursor: not-allowed;
+  }
+  
+  /* Result Section */
+  .result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #3f51b5; /* Highlight message */
+  }
+  
+  /* Error Message Styling */
+  .error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Add this to Decode.css */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.loading-spinner img {
+    width: 50px;
+    height: 50px;
+}
+
+.loading-spinner p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
